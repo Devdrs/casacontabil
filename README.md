@@ -1,77 +1,118 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta charset="viewport" content="width=device-width initial-scale=1">
-        <title> Casa Contabil </title>
-        <meta name="utf-8">
-        <style type="text/css">
-            h1{
-                font-size: 25px;
-                color: blue;
-                font-family: arial;
-            }
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Contábil | Contabilidade Simplificada</title>
 
-        </style>
-    </head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #0b3c5d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: #fff;
+        }
+
+        h1 {
+            color: #0b3c5d;
+            font-size: 26px;
+        }
+
+        h2 {
+            color: #1d70b8;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .cta {
+            background-color: #1d70b8;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .cta a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #0b3c5d;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
 <body>
-<!--cabecalho-->
-   <header>
-    <!--aqui bem uma imagem -->
-    <img src=""
-    <figure>
 
-    </figure>
-    </header>
+<header>
+    <h1>Casa Contábil</h1>
+    <p>Sua contabilidade com a segurança de um lar, feita para sua empresa.</p>
+</header>
 
-<!--conteudo central-->
-   <section>
-    <h1>
-       Casa contabil! Sua contabilidade como segurança de um lar e feito para sua empresa..
-</h1>
-    <h2>
-       
-        Conte com os nossos Time do Contabil fiscal departamento pessoal e nosso setor de planejamento triburario completo  
-    <p><br> Departamento Contábil</p><br>
+<section>
+    <h2>Quem Somos</h2>
     <p>
-        Responsável pelo registro e análise das movimentações financeiras da empresa. 
-        Gera demonstrações contábeis como o balanço patrimonial, DRE, e garante 
-        a conformidade com as normas contábeis vigentes. 
+        Oferecemos soluções contábeis completas para MEIs, autônomos e pequenas empresas,
+        com atendimento simples, transparente e totalmente online.
     </p>
-    <br>
-<p>
-    <p>Departamento Fiscal</p>
-Cuida da apuração e recolhimento de tributos (federais, estaduais e municipais), 
-emissão de notas fiscais, escrituração fiscal e cumprimento das obrigações acessórias, 
-como SPED Fiscal e EFD-Contribuições.
-</p>
-<br>
-<p>
-<p>Departamento Pessoal</p>    
-Responsável pela administração de pessoal, 
-incluindo admissões, demissões, folha de pagamento, encargos trabalhistas (INSS, FGTS), 
-férias, 13º salário e envio do eSocial.
-</p>
-<p>Setor de Planejamento Tributário</p>
-Focado em estudar e aplicar estratégias legais para reduzir a carga tributária da empresa. 
-Atua na escolha do melhor regime de tributação, análise de incentivos fiscais e simulações
-para tomada de decisão.
-<br>
-</p>
-    </h2>
-   </section>
-<!--Rodapé-->
-   <footer>
-    <h3> <strong>Contabilidade facitada para melhor te atender </strong></h3>
-    <p>
-        CNP.:000.000.000-00
-        CRC RO0000001
+
+    <h2>Nossos Serviços</h2>
+
+    <p><strong>📊 Departamento Contábil</strong><br>
+        Escrituração contábil, balanço patrimonial, DRE e conformidade com as normas vigentes.
     </p>
-    <br>
-    <p>
-        Desenvolvido por: Diogo Reis Silva 
-    <p> Contador e analista de sistema</p>
 
+    <p><strong>🧾 Departamento Fiscal</strong><br>
+        Apuração de impostos, emissão de notas fiscais e envio de obrigações acessórias.
+    </p>
 
-   </footer>
+    <p><strong>👥 Departamento Pessoal</strong><br>
+        Folha de pagamento, admissões, demissões, FGTS, INSS e eSocial.
+    </p>
+
+    <p><strong>💡 Planejamento Tributário</strong><br>
+        Estratégias legais para reduzir impostos e escolher o melhor regime tributário.
+    </p>
+
+    <div class="cta">
+        <p>📲 Fale agora com um contador</p>
+        <a href="https://wa.me/5569999999999" target="_blank">
+            Atendimento pelo WhatsApp
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p><strong>Casa Contábil</strong></p>
+    <p>CRC RO 000000 | CNPJ: 00.000.000/0000-00</p>
+    <p>Desenvolvido por Diogo Reis Silva<br>
+    Contador e Analista de Sistemas</p>
+</footer>
+
 </body>
-</html># casacontabil
+</html>
