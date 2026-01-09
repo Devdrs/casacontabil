@@ -77,8 +77,8 @@
 <section>
     <h2>Quem Somos</h2>
     <p>
-        Oferecemos soluções contábeis completas para MEIs, autônomos e pequenas empresas,
-        com atendimento simples, transparente e totalmente online.
+        Oferecemos soluções contábeis completas para MEIs, autônomos, Empresas de medio e grande porte,
+        com atendimento simples, transparente e totalmente online, acreditamos que pode fazer diferença para sua empresa
     </p>
 
     <h2>Nossos Serviços</h2>
@@ -101,7 +101,7 @@
 
     <div class="cta">
         <p>📲 Fale agora com um contador</p>
-        <a href="https://wa.me/5569999999999" target="_blank">
+        <a href="https://wa.me/5569993842735" target="_blank">
             Atendimento pelo WhatsApp
         </a>
     </div>
