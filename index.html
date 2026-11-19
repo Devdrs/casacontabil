@@ -1,51 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- ============ GOOGLE ANALYTICS 4 ============
+     Substitua G-XXXXXXXXXX pelo seu ID real de medição do GA4 -->
+<script async src="https://googletagmanager.com"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+</script>
+
 <!-- ============ SEO PRINCIPAL ============ -->
-<title>Contador em Ji-Paraná (RO) | Casa Contábil — Contabilidade Inteligente</title>
-<meta name="description" content="Casa Contábil: contabilidade especializada em Ji-Paraná/RO para produtores rurais, transportadoras, empresas de tecnologia e pequenos negócios. Diagnóstico gratuito pelo WhatsApp.">
-<meta name="keywords" content="contador em Ji-Paraná, contabilidade em Ji-Paraná, contabilidade para produtor rural, contador para transportadora, contabilidade para empresas de tecnologia, contabilidade para pequenas empresas, abertura de empresa Rondônia, MEI Ji-Paraná">
+<title>Contador em Ji-Paraná (RO) | Casa Contábil — Contabilidade e Consultoria</title>
+<meta name="description" content="Escritório de contabilidade em Ji-Paraná/RO. Abertura de empresas, MEI, planejamento tributário, contabilidade rural, ITR, departamento pessoal e BPO financeiro.">
 <meta name="author" content="Casa Contábil">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://casacontabil.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#26292E">
+<meta name="geo.region" content="BR-RO">
+<meta name="geo.placename" content="Ji-Paraná">
+<link rel="canonical" href="https://github.io">
 
 <!-- ============ OPEN GRAPH ============ -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Casa Contábil">
 <meta property="og:title" content="Contador em Ji-Paraná (RO) | Casa Contábil">
-<meta property="og:description" content="Soluções contábeis inteligentes para produtores rurais, transportadoras, empresas de tecnologia e pequenos negócios. Fale agora com um contador.">
-<meta property="og:image" content="https://casacontabil.github.io/assets/img/og-cover.jpg">
-<meta property="og:url" content="https://casacontabil.github.io/">
+<meta property="og:description" content="Contabilidade consultiva, abertura de CNPJ, planejamento tributário e contabilidade rural em Ji-Paraná e toda Rondônia.">
+<meta property="og:image" content="https://github.ioassets/img/og-cover.jpg">
+<meta property="og:image:alt" content="Casa Contábil — Contabilidade em Ji-Paraná, Rondônia">
+<meta property="og:url" content="https://github.io">
 <meta property="og:locale" content="pt_BR">
 
 <!-- ============ TWITTER CARD ============ -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Contador em Ji-Paraná (RO) | Casa Contábil">
-<meta name="twitter:description" content="Contabilidade inteligente para quem quer crescer. Diagnóstico gratuito pelo WhatsApp.">
-<meta name="twitter:image" content="https://casacontabil.github.io/assets/img/og-cover.jpg">
+<meta name="twitter:description" content="Soluções contábeis, fiscais e trabalhistas em Ji-Paraná/RO. Solicite atendimento pelo WhatsApp.">
+<meta name="twitter:image" content="https://github.ioassets/img/og-cover.jpg">
 
-<!-- ============ FAVICON ============ -->
 <link rel="icon" type="image/png" href="assets/icons/favicon.png">
 
 <!-- ============ FONTES ============ -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 
-<!-- ============ CSS ============ -->
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 
-<!-- ============ SCHEMA.ORG (AccountingService / LocalBusiness) ============ -->
+<!-- ============ DADOS ESTRUTURADOS: ESCRITÓRIO ============ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "AccountingService",
   "name": "Casa Contábil",
-  "image": "https://casacontabil.github.io/assets/img/og-cover.jpg",
-  "description": "Contabilidade completa para produtores rurais, transportadoras, empresas de tecnologia, pequenos negócios e MEIs em Ji-Paraná, Rondônia.",
+  "url": "https://github.io",
+  "image": "https://github.ioassets/img/og-cover.jpg",
+  "description": "Contabilidade em Ji-Paraná/RO para empresas, MEIs, produtores rurais, transportadoras e prestadores de serviço.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Ji-Paraná",
@@ -53,356 +66,146 @@
     "addressCountry": "BR"
   },
   "telephone": "+55-69-99384-2735",
-  "areaServed": "Ji-Paraná, Rondônia",
-  "priceRange": "$$",
-  "sameAs": []
+  "email": "diogoreissilva11@gmail.com",
+  "areaServed": [
+    {"@type": "City", "name": "Ji-Paraná"},
+    {"@type": "State", "name": "Rondônia"}
+  ],
+  "knowsAbout": [
+    "Contabilidade",
+    "Abertura de empresas",
+    "MEI",
+    "Planejamento tributário",
+    "Reforma Tributária",
+    "Departamento pessoal",
+    "Contabilidade rural",
+    "Declaração de ITR",
+    "Imposto de Renda",
+    "BPO financeiro",
+    "Contabilidade consultiva"
+  ],
+  "sameAs": ["https://instagram.com"]
+}
+</script>
+
+<!-- ============ DADOS ESTRUTURADOS: FAQ ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Atendem empresas fora de Ji-Paraná?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Com processos digitais, atendemos empresas em Ji-Paraná, em toda Rondônia e em outros estados."}},
+    {"@type": "Question", "name": "Como funciona o atendimento inicial?", "acceptedAnswer": {"@type": "Answer", "text": "Você entra em contato pelo WhatsApp ou pelo formulário do site, informa o perfil da sua atividade e recebe orientação sobre os próximos passos."}},
+    {"@type": "Question", "name": "Trabalham com MEI e Simples Nacional?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Atendemos MEIs, microempresas e empresas optantes pelo Simples Nacional, Lucro Presumido e Lucro Real."}},
+    {"@type": "Question", "name": "Vocês atendem produtores rurais e transportadoras?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Contamos com rotinas voltadas ao agronegócio (ITR, Funrural e Livro Caixa) e ao setor de transporte (CT-e e MDF-e)."}},
+    {"@type": "Question", "name": "Como funciona o pré-cadastro comercial no site?", "acceptedAnswer": {"@type": "Answer", "text": "Você preenche os dados básicos da empresa ou projeto na aba de pré-cadastro para agilizar a análise e o envio da proposta de atendimento."}}
+  ]
 }
 </script>
 </head>
 <body>
 
-<!-- ============================================================
-     1. HEADER FIXO
-     ============================================================ -->
+<a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+<!-- ============ CABEÇALHO INSTITUCIONAL ============ -->
 <header class="site-header" id="topo">
   <div class="header-inner">
     <a href="#topo" class="brand" aria-label="Casa Contábil — início">
-      <span class="brand-mark">CC</span>
-      <span class="brand-name">Casa Contábil</span>
+      <span class="brand-mark" aria-hidden="true">CC</span>
+      <span class="brand-text">
+        <span class="brand-name">Casa Contábil</span>
+        <span class="brand-crc">CRC RO 11266</span>
+      </span>
     </a>
 
     <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
-      <a href="#topo">Início</a>
+      <a href="#hero">Início</a>
       <a href="#servicos">Serviços</a>
-      <a href="#segmentos">Segmentos</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
+      <a href="#solucoes">Soluções</a>
+      <a href="#consultoria">Consultoria</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#contato">Atendimento</a>
     </nav>
 
-    <a class="btn btn-gold header-cta"
-       href="https://wa.me/5569993842735?text=Ol%C3%A1!%20Quero%20falar%20com%20um%20contador%20da%20Casa%20Cont%C3%A1bil."
-       target="_blank" rel="noopener">Fale com um Contador</a>
+    <a class="btn btn-graphite header-cta"
+       href="https://wa.me."
+       target="_blank" rel="noopener noreferrer">WhatsApp Comercial</a>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
-<main>
+<main id="conteudo-principal">
 
-<!-- ============================================================
-     2. HERO
-     ============================================================ -->
+<!-- ============ APRESENTAÇÃO PRINCIPAL ============ -->
 <section class="hero" id="hero">
   <div class="hero-ledger" aria-hidden="true"></div>
   <div class="hero-inner">
-    <p class="eyebrow eyebrow-light">— Contabilidade em Ji-Paraná / RO</p>
-    <h1 class="hero-title">
-      Soluções Contábeis Inteligentes para Empresas que Querem Crescer
-    </h1>
-    <p class="hero-sub">
-      Sua contabilidade com a segurança de um lar, feita para o seu negócio. Atendimento
-      humano, planejamento tributário e tecnologia para produtores rurais, transportadoras,
-      empresas de tecnologia e pequenos negócios.
-    </p>
+    <p class="eyebrow eyebrow-light">Ji-Paraná • Rondônia</p>
+    <h1 class="hero-title">Contabilidade corporativa e consultiva para decisões seguras</h1>
+    <p class="hero-sub">Apoio contábil, fiscal, trabalhista e tributário para empresas, MEIs, produtores rurais e prestadores de serviço em Ji-Paraná e toda Rondônia.</p>
+
     <div class="hero-actions">
-      <a class="btn btn-gold"
-         href="https://wa.me/5569993842735?text=Ol%C3%A1!%20Quero%20solicitar%20um%20diagn%C3%B3stico%20cont%C3%A1bil%20gratuito."
-         target="_blank" rel="noopener">Solicitar Diagnóstico Gratuito</a>
-      <a class="btn btn-outline"
-         href="https://wa.me/5569993842735?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20falar%20com%20um%20contador."
-         target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <a class="btn btn-light-solid"
+         href="https://wa.me."
+         target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+      <a class="btn btn-outline" href="#contato">Solicitar Proposta</a>
     </div>
 
-    <ul class="hero-stats" role="list">
-      <li><strong>+100</strong><span>empresas atendidas</span></li>
-      <li><strong>100%</strong><span>atendimento online</span></li>
-      <li><strong>CRC</strong><span>RO-011266/0-5 ativo</span></li>
+    <ul class="hero-pillars">
+      <li><strong>Ji-Paraná / RO</strong><span>Atendimento local e digital</span></li>
+      <li><strong>CRC RO 11266</strong><span>Responsabilidade técnica</span></li>
+      <li><strong>Visão Consultiva</strong><span>Foco em organização e conformidade</span></li>
     </ul>
   </div>
 </section>
 
-<!-- ============================================================
-     3. PROBLEMAS (DORES)
-     ============================================================ -->
-<section class="section section-light" id="problemas">
-  <p class="eyebrow">— Um diagnóstico rápido</p>
-  <h2>Isso soa familiar?</h2>
-  <div class="grid grid-4 fade-in-group">
-    <div class="pain-card fade-in">
-      <span class="pain-icon">💸</span>
-      <p>Você sente que <strong>paga impostos demais</strong> e não sabe por quê?</p>
-    </div>
-    <div class="pain-card fade-in">
-      <span class="pain-icon">❓</span>
-      <p>Tem <strong>dúvidas fiscais</strong> que ninguém explica de forma simples?</p>
-    </div>
-    <div class="pain-card fade-in">
-      <span class="pain-icon">📈</span>
-      <p>Sua empresa está <strong>crescendo sem planejamento</strong> tributário?</p>
-    </div>
-    <div class="pain-card fade-in">
-      <span class="pain-icon">⚖️</span>
-      <p>Não sabe <strong>qual regime tributário</strong> é o melhor para o seu caso?</p>
-    </div>
-  </div>
-</section>
+<!-- ============ SERVIÇOS OFERECIDOS ============ -->
+<section class="section section-white" id="servicos">
+  <p class="eyebrow">Serviços Contábeis</p>
+  <h2>Soluções completas para a rotina fiscal e empresarial</h2>
+  <p class="section-intro">Atuação estruturada para manter obrigações em dia, reduzir riscos operacionais e apoiar o crescimento do seu negócio.</p>
 
-<!-- ============================================================
-     4. SOLUÇÃO
-     ============================================================ -->
-<section class="section section-navy" id="solucao">
-  <div class="solucao-inner">
-    <p class="eyebrow eyebrow-light">— A Casa Contábil</p>
-    <h2 class="light">A contabilidade certa muda o rumo do seu negócio</h2>
-    <p class="lead light">
-      Somos uma contabilidade digital pensada para quem precisa de clareza, não de burocracia.
-      Unimos atendimento próximo, especialistas por área e tecnologia para transformar números
-      em decisões — para que você foque em crescer, e a gente cuide do resto.
-    </p>
-    <a class="btn btn-gold"
-       href="https://wa.me/5569993842735?text=Ol%C3%A1!%20Quero%20entender%20como%20a%20Casa%20Cont%C3%A1bil%20pode%20me%20ajudar."
-       target="_blank" rel="noopener">Quero essa solução</a>
-  </div>
-</section>
+  <div class="grid grid-3">
+    <article class="card fade-in">
+      <h3>Abertura e Regularização de CNPJ</h3>
+      <p>Constituição de empresas em Ji-Paraná e Rondônia, alterações contratuais, enquadramento de atividades e regularização cadastral.</p>
+    </article>
 
-<!-- ============================================================
-     5. SERVIÇOS
-     ============================================================ -->
-<section class="section section-light" id="servicos">
-  <p class="eyebrow">— Serviços</p>
-  <h2>Tudo que sua empresa precisa, em um só lugar</h2>
-  <div class="grid grid-4 fade-in-group">
-    <article class="service-card fade-in">
-      <span class="service-icon">📊</span>
-      <h3>Departamento Contábil</h3>
-      <p>Escrituração contábil, balanço patrimonial, DRE e conformidade com as normas vigentes.</p>
+    <article class="card fade-in">
+      <h3>Contabilidade Mensal</h3>
+      <p>Escrituração contábil e fiscal, apuração de impostos, balancetes e entrega pontual das obrigações acessórias.</p>
     </article>
-    <article class="service-card fade-in">
-      <span class="service-icon">🧾</span>
-      <h3>Departamento Fiscal</h3>
-      <p>Apuração de impostos, emissão de notas fiscais e envio de obrigações acessórias.</p>
+
+    <article class="card fade-in">
+      <h3>Planejamento Tributário e Reforma Tributária</h3>
+      <p>Análise de regime tributário (Simples Nacional, Lucro Presumido ou Lucro Real) e preparação para as mudanças da Reforma Tributária.</p>
     </article>
-    <article class="service-card fade-in">
-      <span class="service-icon">👥</span>
+
+    <article class="card fade-in">
       <h3>Departamento Pessoal</h3>
-      <p>Folha de pagamento, admissões, demissões, FGTS, INSS e eSocial.</p>
+      <p>Gestão de folha de pagamento, admissões, férias, rescisões, encargos sociais e transmissão de eventos no eSocial.</p>
     </article>
-    <article class="service-card fade-in">
-      <span class="service-icon">💡</span>
-      <h3>Planejamento Tributário</h3>
-      <p>Estratégias legais para reduzir impostos e escolher o melhor regime tributário.</p>
+
+    <article class="card fade-in">
+      <h3>Contabilidade Rural e ITR</h3>
+      <p>Apuração de resultados da atividade rural, Livro Caixa Digital do Produtor Rural (LCDPR), Funrural e declaração anual de ITR.</p>
     </article>
-    <article class="service-card fade-in">
-      <span class="service-icon">🏢</span>
-      <h3>Abertura de Empresas</h3>
-      <p>Todo o processo de constituição do seu CNPJ, do zero ao alvará, sem dor de cabeça.</p>
-    </article>
-    <article class="service-card fade-in">
-      <span class="service-icon">💰</span>
-      <h3>BPO Financeiro</h3>
-      <p>Gestão financeira terceirizada: fluxo de caixa, contas a pagar e a receber.</p>
-    </article>
-    <article class="service-card fade-in">
-      <span class="service-icon">🧮</span>
-      <h3>Imposto de Renda</h3>
-      <p>Declaração de IRPF e IRPJ feita com precisão, sem perder prazos ou benefícios.</p>
-    </article>
-    <article class="service-card fade-in">
-      <span class="service-icon">🎯</span>
-      <h3>Consultoria</h3>
-      <p>Orientação especializada para decisões estratégicas do seu negócio.</p>
+
+    <article class="card fade-in">
+      <h3>Imposto de Renda (IRPF)</h3>
+      <p>Elaboração e revisão da declaração de Imposto de Renda Pessoa Física, ganho de capital e organização patrimonial.</p>
     </article>
   </div>
 </section>
 
-<!-- ============================================================
-     6. SEGMENTOS
-     ============================================================ -->
-<section class="section section-gray" id="segmentos">
-  <p class="eyebrow">— Segmentos</p>
-  <h2>Especialistas no seu ramo de atuação</h2>
-  <div class="grid grid-4 fade-in-group">
-    <article class="segment-card fade-in">
-      <span class="segment-icon">🌾</span>
-      <h3>Produtor Rural</h3>
-      <p>Apuração de ITR, funrural, Livro Caixa e planejamento tributário para o agronegócio.</p>
-    </article>
-    <article class="segment-card fade-in">
-      <span class="segment-icon">🚚</span>
-      <h3>Transportadoras</h3>
-      <p>Gestão fiscal de frota, MDF-e, CT-e e regimes especiais do setor de transporte.</p>
-    </article>
-    <article class="segment-card fade-in">
-      <span class="segment-icon">💻</span>
-      <h3>Empresas de Tecnologia</h3>
-      <p>Enquadramento tributário, Nota Fiscal de serviço e suporte para startups e SaaS.</p>
-    </article>
-    <article class="segment-card fade-in">
-      <span class="segment-icon">🏪</span>
-      <h3>Pequenos Negócios e MEIs</h3>
-      <p>Contabilidade simples e acessível para o Simples Nacional e o dia a dia do lojista.</p>
-    </article>
-  </div>
-</section>
+<!-- ============ SOLUÇÕES PARA EMPRESAS E MEIs ============ -->
+<section class="section-gray" id="solucoes">
+  <div class="section">
+    <p class="eyebrow">Soluções por Perfil</p>
+    <h2>Atendimento adaptado ao porte e segmento da sua atividade</h2>
 
-<!-- ============================================================
-     7. DIFERENCIAIS
-     ============================================================ -->
-<section class="section section-light" id="diferenciais">
-  <p class="eyebrow">— Por que a Casa Contábil</p>
-  <h2>Diferenciais que fazem a diferença</h2>
-  <div class="grid grid-4 fade-in-group">
-    <div class="diff-item fade-in"><span class="diff-icon">🤝</span><h4>Atendimento Humanizado</h4></div>
-    <div class="diff-item fade-in"><span class="diff-icon">💻</span><h4>Atendimento Online</h4></div>
-    <div class="diff-item fade-in"><span class="diff-icon">🎓</span><h4>Especialistas por Área</h4></div>
-    <div class="diff-item fade-in"><span class="diff-icon">📉</span><h4>Planejamento Tributário</h4></div>
-    <div class="diff-item fade-in"><span class="diff-icon">🛡️</span><h4>Segurança Jurídica</h4></div>
-    <div class="diff-item fade-in"><span class="diff-icon">💵</span><h4>Economia de Impostos</h4></div>
-    <div class="diff-item fade-in"><span class="diff-icon">⚙️</span><h4>Tecnologia a Favor do Cliente</h4></div>
-    <div class="diff-item fade-in"><span class="diff-icon">✅</span><h4>CRC Ativo e Regular</h4></div>
-  </div>
-</section>
-
-<!-- ============================================================
-     8. COMO FUNCIONA
-     ============================================================ -->
-<section class="section section-navy" id="como-funciona">
-  <p class="eyebrow eyebrow-light">— Como funciona</p>
-  <h2 class="light">Do primeiro contato ao suporte contínuo</h2>
-  <ol class="timeline fade-in-group">
-    <li class="timeline-step fade-in"><span class="step-num">01</span><h4>Contato</h4><p>Você fala com a gente pelo WhatsApp e conta o momento da sua empresa.</p></li>
-    <li class="timeline-step fade-in"><span class="step-num">02</span><h4>Diagnóstico</h4><p>Analisamos sua situação fiscal e tributária atual, sem custo.</p></li>
-    <li class="timeline-step fade-in"><span class="step-num">03</span><h4>Planejamento</h4><p>Montamos uma estratégia contábil e tributária sob medida.</p></li>
-    <li class="timeline-step fade-in"><span class="step-num">04</span><h4>Execução</h4><p>Colocamos o plano em prática com nossa equipe especializada.</p></li>
-    <li class="timeline-step fade-in"><span class="step-num">05</span><h4>Suporte Contínuo</h4><p>Acompanhamento constante para sua empresa crescer com segurança.</p></li>
-  </ol>
-</section>
-
-<!-- ============================================================
-     9. DEPOIMENTOS
-     ============================================================ -->
-<section class="section section-light" id="depoimentos">
-  <p class="eyebrow">— Depoimentos</p>
-  <h2>Quem confia na Casa Contábil</h2>
-  <p class="section-note">* Depoimentos ilustrativos — em breve substituídos por avaliações reais de clientes.</p>
-  <div class="grid grid-3 fade-in-group">
-    <blockquote class="testimonial-card fade-in">
-      <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. A equipe simplificou toda a parte fiscal da minha propriedade rural.”</p>
-      <cite>— Produtor Rural, Ji-Paraná/RO</cite>
-    </blockquote>
-    <blockquote class="testimonial-card fade-in">
-      <p>“Sed do eiusmod tempor incididunt ut labore. Hoje tenho clareza total da folha e dos impostos da transportadora.”</p>
-      <cite>— Transportadora, Rondônia</cite>
-    </blockquote>
-    <blockquote class="testimonial-card fade-in">
-      <p>“Ut enim ad minim veniam, quis nostrud exercitation. Atendimento rápido e online, perfeito para minha empresa de tecnologia.”</p>
-      <cite>— Empresa de Tecnologia</cite>
-    </blockquote>
-  </div>
-</section>
-
-<!-- ============================================================
-     10. FAQ
-     ============================================================ -->
-<section class="section section-gray" id="faq">
-  <p class="eyebrow">— Perguntas frequentes</p>
-  <h2>Ainda com dúvidas?</h2>
-  <div class="faq-list">
-    <details class="faq-item">
-      <summary>Atendem empresas fora de Ji-Paraná?</summary>
-      <p>Sim. Nosso atendimento é 100% online, então podemos atender empresas em toda Rondônia e em outros estados.</p>
-    </details>
-    <details class="faq-item">
-      <summary>Como funciona o diagnóstico gratuito?</summary>
-      <p>Você fala com um contador pelo WhatsApp, envia as informações básicas da sua empresa e recebemos uma análise inicial sem compromisso.</p>
-    </details>
-    <details class="faq-item">
-      <summary>Trabalham com MEI e Simples Nacional?</summary>
-      <p>Sim, atendemos MEIs, empresas do Simples Nacional, Lucro Presumido e Lucro Real.</p>
-    </details>
-    <details class="faq-item">
-      <summary>Vocês atendem produtores rurais e transportadoras?</summary>
-      <p>Sim, temos processos específicos para o agronegócio (ITR, Funrural, Livro Caixa) e para o setor de transporte (CT-e, MDF-e).</p>
-    </details>
-    <details class="faq-item">
-      <summary>Quanto tempo leva para abrir uma empresa?</summary>
-      <p>O prazo varia conforme o município e a atividade, mas cuidamos de todo o processo para que seja o mais rápido possível.</p>
-    </details>
-  </div>
-</section>
-
-<!-- ============================================================
-     11. CTA FINAL
-     ============================================================ -->
-<section class="section section-cta" id="cta-final">
-  <h2 class="light">Vamos cuidar da sua contabilidade enquanto você cuida do crescimento da sua empresa.</h2>
-  <a class="btn btn-gold btn-lg"
-     href="https://wa.me/5569993842735?text=Ol%C3%A1!%20Quero%20come%C3%A7ar%20agora%20com%20a%20Casa%20Cont%C3%A1bil."
-     target="_blank" rel="noopener">Falar com um Contador Agora</a>
-</section>
-
-</main>
-
-<!-- ============================================================
-     12. RODAPÉ
-     ============================================================ -->
-<footer class="site-footer" id="contato">
-  <div class="footer-grid">
-    <div class="footer-col">
-      <p class="brand-name light">Casa Contábil</p>
-      <p>CRC RO-011266/0-5<br>
-      <p>Sua contabilidade com a segurança de um lar, feita para sua empresa.</p>
-    </div>
-
-    <div class="footer-col">
-      <h5>Contato</h5>
-      <p>📍 Ji-Paraná — RO</p>
-      <p>📞 (69) 99384-2735</p>
-      <p>✉️ contato@casacontabil.com.br</p>
-      <a class="footer-whatsapp" href="https://wa.me/5569993842735" target="_blank" rel="noopener">💬 WhatsApp</a>
-    </div>
-
-    <div class="footer-col">
-      <h5>Links rápidos</h5>
-      <a href="#topo">Início</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#segmentos">Segmentos</a>
-      <a href="#faq">FAQ</a>
-    </div>
-
-    <div class="footer-col">
-      <h5>Redes sociais</h5>
-      <div class="footer-social">
-        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
-        <a href="#" aria-label="Facebook" target="_blank" rel="noopener">Facebook</a>
-        <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-
-    <div class="footer-col footer-map">
-      <h5>Localização</h5>
-      <iframe
-        title="Mapa Casa Contábil - Ji-Paraná/RO"
-        src="https://www.google.com/maps?q=Ji-Paran%C3%A1,RO&output=embed"
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; <span id="ano"></span> Casa Contábil — Todos os direitos reservados.</p>
-    <p>Desenvolvido por Diogo Reis Silva — Contador e Analista de Sistemas</p>
-  </div>
-</footer>
-
-<!-- ============ BOTÃO FLUTUANTE WHATSAPP ============ -->
-<a class="whatsapp-float"
-   href="https://wa.me/5569993842735?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20falar%20com%20um%20contador."
-   target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  💬
-</a>
-
-<script src="script.js"></script>
-</body>
-</html>
+    <div class="grid grid-4">
+      <article class="card card-flat fade-in">
