@@ -1,12 +1,11 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Contabilidade em Ji-Paraná | Casa Contábil</title>
-  <meta name="description" content="Casa Contábil em Ji-Paraná, Rondônia. Abertura de empresas, MEI, regularização, contabilidade empresarial, departamento pessoal e consultoria tributária.">
+  <meta name="description" content="Casa Contábil em Ji-Paraná, RO. Atendimento para abertura de empresas, MEI, regularização, contabilidade, departamento pessoal e consultoria tributária. Solicite informações.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="theme-color" content="#23262b">
   <link rel="canonical" href="https://casacontabil.github.io/">
@@ -15,13 +14,15 @@
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Casa Contábil">
   <meta property="og:title" content="Casa Contábil | Contabilidade em Ji-Paraná">
-  <meta property="og:description" content="Serviços contábeis, regularização e consultoria empresarial em Ji-Paraná, Rondônia.">
+  <meta property="og:description" content="Contabilidade, regularização e consultoria empresarial em Ji-Paraná, Rondônia.">
   <meta property="og:url" content="https://casacontabil.github.io/">
   <meta property="og:image" content="https://casacontabil.github.io/assets/img/casa-contabil-social.png">
+  <meta property="og:image:alt" content="Arte institucional da Casa Contábil">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://casacontabil.github.io/assets/img/casa-contabil-social.png">
 
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
 
   <script type="application/ld+json">
   {
@@ -29,6 +30,7 @@
     "@type": "AccountingService",
     "name": "Casa Contábil",
     "url": "https://casacontabil.github.io/",
+    "description": "Serviços contábeis e consultoria empresarial em Ji-Paraná, Rondônia.",
     "telephone": "+5569993842735",
     "email": "diogoreissilva11@gmail.com",
     "address": {
@@ -45,64 +47,81 @@
 </head>
 
 <body>
-<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
+<!-- CABEÇALHO -->
 <header class="header">
-  <div class="container header-inner">
-    <a class="brand" href="#inicio">
-      <span class="brand-icon">CC</span>
+  <div class="wrap header-row">
+    <a class="brand" href="#inicio" aria-label="Casa Contábil, início">
+      <span class="mark">CC</span>
       <span>Casa Contábil<small>Ji-Paraná · Rondônia</small></span>
     </a>
 
-    <button id="menuToggle" class="menu-toggle"
-      type="button" aria-controls="menu"
-      aria-expanded="false">☰ Menu</button>
+    <button class="nav-toggle" id="navToggle"
+      type="button" aria-expanded="false" aria-controls="mainNav">
+      Menu ☰
+    </button>
 
-    <nav id="menu" class="nav" aria-label="Menu principal">
+    <nav id="mainNav" class="nav" aria-label="Navegação principal">
       <a href="#inicio">Início</a>
       <a href="#servicos">Serviços</a>
       <a href="#sobre">Sobre</a>
       <a href="#contato">Atendimento</a>
     </nav>
 
-    <a class="btn btn-dark header-contact"
-      href="https://wa.me/5569993842735"
-      target="_blank" rel="noopener noreferrer">
-      WhatsApp
+    <a class="btn btn-dark top-contact"
+       href="https://wa.me/5569993842735?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20os%20servi%C3%A7os%20da%20Casa%20Cont%C3%A1bil."
+       target="_blank" rel="noopener noreferrer">
+       Falar no WhatsApp
     </a>
   </div>
 </header>
 
 <main id="conteudo">
 
+  <!-- APRESENTAÇÃO -->
   <section class="hero" id="inicio">
-    <div class="container">
-      <p class="eyebrow">CONTABILIDADE EM JI-PARANÁ · RO</p>
-      <h1>Sua empresa em boas mãos.</h1>
-      <p class="hero-lead">
-        Mais que números, é o seu futuro em equilíbrio.
-      </p>
-      <p>
-        Soluções contábeis para empresas, MEIs,
-        profissionais e produtores rurais.
-      </p>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">CONTABILIDADE EM JI-PARANÁ · RO</p>
 
-      <div class="actions">
-        <a class="btn btn-light"
-          href="https://wa.me/5569993842735?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
-          target="_blank" rel="noopener noreferrer">
-          Solicitar orçamento
-        </a>
-        <a class="btn btn-outline" href="#contato">
-          Enviar mensagem
-        </a>
+        <h1>Sua empresa em<br>boas mãos.</h1>
+
+        <p class="lead">
+          Mais que números, é o seu futuro em equilíbrio.
+        </p>
+
+        <p class="hero-description">
+          Soluções contábeis para empresas, MEIs,
+          profissionais e produtores rurais.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-white"
+             href="https://wa.me/5569993842735?text=Ol%C3%A1%21%20Quero%20solicitar%20um%20or%C3%A7amento%20%C3%A0%20Casa%20Cont%C3%A1bil."
+             target="_blank" rel="noopener noreferrer">
+            Solicitar orçamento
+          </a>
+
+          <a class="btn btn-outline" href="#contato">
+            Enviar mensagem
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <img src="assets/img/logo-destaque.png"
+             alt="Identidade visual Casa Contábil com leão, símbolo contábil e casa"
+             width="730" height="565">
       </div>
     </div>
   </section>
 
-  <section class="section container" id="servicos">
+  <!-- SERVIÇOS -->
+  <section class="section wrap" id="servicos">
     <p class="eyebrow">NOSSOS SERVIÇOS</p>
     <h2>Como podemos ajudar sua empresa?</h2>
+
     <p class="intro">
       Atendimento contábil e orientação para diferentes
       necessidades empresariais.
@@ -111,251 +130,359 @@
     <div class="cards">
       <article class="card">
         <h3>Abertura e regularização de empresas</h3>
-        <p>Constituição, alterações e regularização cadastral.</p>
+        <p>
+          Orientação sobre constituição, alterações cadastrais
+          e regularização de CNPJ.
+        </p>
       </article>
+
       <article class="card">
         <h3>Contabilidade empresarial</h3>
-        <p>Escrituração, rotinas fiscais e obrigações acessórias.</p>
+        <p>
+          Rotinas contábeis, fiscais e obrigações relacionadas
+          à atividade empresarial.
+        </p>
       </article>
+
       <article class="card">
         <h3>MEI e pequenas empresas</h3>
-        <p>Orientação, regularização e acompanhamento de obrigações.</p>
+        <p>
+          Apoio para obrigações, regularização e avaliação
+          de mudanças de enquadramento.
+        </p>
       </article>
+
       <article class="card">
         <h3>Planejamento tributário</h3>
-        <p>Análise de regimes tributários e alternativas legais.</p>
+        <p>
+          Análise de alternativas tributárias de acordo
+          com a situação de cada negócio.
+        </p>
       </article>
+
       <article class="card">
         <h3>Departamento pessoal</h3>
-        <p>Folha de pagamento, admissões, férias e rescisões.</p>
+        <p>
+          Informações e atendimento para folha de pagamento,
+          admissões, férias e rescisões.
+        </p>
       </article>
+
       <article class="card">
         <h3>Imposto de Renda e atividade rural</h3>
-        <p>Informações sobre IRPF, ITR e contabilidade rural.</p>
+        <p>
+          Solicite informações sobre IRPF, ITR e demandas
+          contábeis de produtores rurais.
+        </p>
       </article>
     </div>
   </section>
 
-  <section class="section section-gray" id="sobre">
-    <div class="container">
-      <p class="eyebrow">CASA CONTÁBIL</p>
-      <h2>Organização hoje, tranquilidade amanhã.</h2>
-      <p class="intro">
-        Entre em contato para apresentar sua necessidade,
-        conhecer as possibilidades de atendimento e
-        solicitar uma proposta de serviços contábeis.
-      </p>
+  <!-- SOBRE E CONTATOS -->
+  <section class="section section-gray about" id="sobre">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">CASA CONTÁBIL</p>
+        <h2>Organização hoje,<br>tranquilidade amanhã.</h2>
+        <p>
+          Entre em contato para apresentar sua necessidade,
+          conhecer as possibilidades de atendimento e solicitar
+          uma proposta de serviços contábeis.
+        </p>
+      </div>
 
-      <div class="contact-links">
+      <div class="info-panel">
         <a href="https://wa.me/5569993842735"
            target="_blank" rel="noopener noreferrer">
+          <span aria-hidden="true">☎</span>
           WhatsApp: (69) 99384-2735
         </a>
+
         <a href="mailto:diogoreissilva11@gmail.com">
+          <span aria-hidden="true">✉</span>
           diogoreissilva11@gmail.com
         </a>
+
         <a href="https://www.instagram.com/casa.contabil/"
            target="_blank" rel="noopener noreferrer">
+          <span aria-hidden="true">◎</span>
           Instagram: @casa.contabil
         </a>
       </div>
     </div>
   </section>
 
-  <section class="section container" id="contato">
-    <p class="eyebrow">ATENDIMENTO</p>
-    <h2>Fale com a Casa Contábil</h2>
-    <p class="intro">
-      Preencha o formulário para solicitar informações.
-      Não envie senhas, documentos sigilosos ou dados bancários.
-    </p>
+  <!-- ATENDIMENTO -->
+  <section class="section contact-section" id="contato">
+    <div class="wrap">
+      <p class="eyebrow">ATENDIMENTO</p>
+      <h2>Fale com a Casa Contábil</h2>
 
-    <div class="form-box">
-      <div class="tabs" role="tablist" aria-label="Tipo de atendimento">
-        <button type="button" class="tab active"
-          id="tab-contato" role="tab"
-          aria-selected="true" aria-controls="form-contato">
-          Contato rápido
-        </button>
-        <button type="button" class="tab"
-          id="tab-cadastro" role="tab"
-          aria-selected="false" aria-controls="form-cadastro"
-          tabindex="-1">
-          Pré-cadastro
-        </button>
+      <p class="intro">
+        Preencha o formulário para solicitar informações.
+        Não envie senhas, documentos sigilosos ou dados bancários.
+      </p>
+
+      <div class="contact-grid">
+        <div class="form-box">
+
+          <div class="tabs" role="tablist" aria-label="Tipo de formulário">
+            <button class="tab active" type="button"
+              role="tab" id="tab-contato"
+              aria-controls="panel-contato"
+              aria-selected="true"
+              data-panel="panel-contato">
+              Contato rápido
+            </button>
+
+            <button class="tab" type="button"
+              role="tab" id="tab-cadastro"
+              aria-controls="panel-cadastro"
+              aria-selected="false"
+              data-panel="panel-cadastro"
+              tabindex="-1">
+              Pré-cadastro
+            </button>
+          </div>
+
+          <!-- FORMULÁRIO DE CONTATO -->
+          <form class="lead-form"
+            id="panel-contato"
+            role="tabpanel"
+            aria-labelledby="tab-contato"
+            action="https://formsubmit.co/ajax/diogoreissilva11@gmail.com"
+            method="POST">
+
+            <input type="hidden" name="_subject"
+              value="Casa Contábil - Novo contato pelo site">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="tipo_formulario"
+              value="Contato rápido">
+
+            <div class="hp" aria-hidden="true">
+              <label>Não preencha este campo
+                <input type="text" name="_honey"
+                  tabindex="-1" autocomplete="off">
+              </label>
+            </div>
+
+            <label>Nome completo
+              <input name="nome" autocomplete="name"
+                required maxlength="100">
+            </label>
+
+            <label>E-mail
+              <input type="email" name="email"
+                autocomplete="email" required maxlength="150">
+            </label>
+
+            <label>WhatsApp com DDD
+              <input type="tel" name="whatsapp"
+                autocomplete="tel" inputmode="tel"
+                required maxlength="25"
+                placeholder="(69) 99999-9999">
+            </label>
+
+            <label>Serviço de interesse
+              <select name="servico" required>
+                <option value="">Selecione</option>
+                <option>Abertura de empresa</option>
+                <option>Contabilidade mensal</option>
+                <option>MEI</option>
+                <option>Regularização empresarial</option>
+                <option>Consultoria tributária</option>
+                <option>Departamento pessoal</option>
+                <option>Contabilidade rural e ITR</option>
+                <option>Imposto de Renda</option>
+                <option>Outro serviço</option>
+              </select>
+            </label>
+
+            <label>Mensagem
+              <textarea name="mensagem" rows="4"
+                required maxlength="1500"
+                placeholder="Conte brevemente o que você precisa"></textarea>
+            </label>
+
+            <label class="check">
+              <input type="checkbox" required
+                name="ciencia_privacidade"
+                value="Li o aviso de privacidade">
+              <span>
+                Li o <a href="privacidade.html" target="_blank"
+                  rel="noopener noreferrer">aviso de privacidade</a>
+                e estou ciente do tratamento dos dados
+                para responder minha solicitação.
+              </span>
+            </label>
+
+            <button class="btn btn-dark submit" type="submit">
+              Enviar solicitação
+            </button>
+
+            <p class="form-status" role="status"
+              aria-live="polite" aria-atomic="true"></p>
+
+            <p class="form-fallback">
+              Problemas para enviar?
+              <a href="mailto:diogoreissilva11@gmail.com">
+                Envie um e-mail diretamente
+              </a>
+              ou
+              <a href="https://wa.me/5569993842735"
+                target="_blank" rel="noopener noreferrer">
+                fale pelo WhatsApp
+              </a>.
+            </p>
+          </form>
+
+          <!-- FORMULÁRIO DE PRÉ-CADASTRO -->
+          <form class="lead-form"
+            id="panel-cadastro"
+            role="tabpanel"
+            aria-labelledby="tab-cadastro"
+            action="https://formsubmit.co/ajax/diogoreissilva11@gmail.com"
+            method="POST" hidden>
+
+            <input type="hidden" name="_subject"
+              value="Casa Contábil - Novo pré-cadastro">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="tipo_formulario"
+              value="Pré-cadastro">
+
+            <div class="hp" aria-hidden="true">
+              <label>Não preencha este campo
+                <input type="text" name="_honey"
+                  tabindex="-1" autocomplete="off">
+              </label>
+            </div>
+
+            <label>Nome ou razão social
+              <input name="nome_ou_razao_social"
+                required maxlength="150">
+            </label>
+
+            <label>Nome do responsável
+              <input name="responsavel"
+                autocomplete="name" required maxlength="100">
+            </label>
+
+            <label>E-mail
+              <input type="email" name="email"
+                autocomplete="email" required maxlength="150">
+            </label>
+
+            <label>WhatsApp com DDD
+              <input type="tel" name="whatsapp"
+                autocomplete="tel" inputmode="tel"
+                required maxlength="25">
+            </label>
+
+            <div class="two">
+              <label>Cidade
+                <input name="cidade" required maxlength="100">
+              </label>
+
+              <label>Estado
+                <select name="estado" required>
+                  <option value="">Selecione</option>
+                  <option value="RO">Rondônia (RO)</option>
+                  <option value="AC">Acre (AC)</option>
+                  <option value="AM">Amazonas (AM)</option>
+                  <option value="MT">Mato Grosso (MT)</option>
+                  <option value="outro">Outro estado</option>
+                </select>
+              </label>
+            </div>
+
+            <label>Perfil
+              <select name="tipo_cliente" required>
+                <option value="">Selecione</option>
+                <option>Pessoa física</option>
+                <option>MEI</option>
+                <option>Empresa</option>
+                <option>Produtor rural</option>
+                <option>Outro</option>
+              </select>
+            </label>
+
+            <label>Serviço desejado
+              <input name="servico" required maxlength="150"
+                placeholder="Ex.: regularização de CNPJ">
+            </label>
+
+            <label>Informações adicionais
+              <textarea name="mensagem" rows="4"
+                maxlength="1500"
+                placeholder="Descreva brevemente a necessidade"></textarea>
+            </label>
+
+            <label class="check">
+              <input type="checkbox" required
+                name="ciencia_privacidade"
+                value="Li o aviso de privacidade">
+              <span>
+                Li o <a href="privacidade.html" target="_blank"
+                  rel="noopener noreferrer">aviso de privacidade</a>
+                e estou ciente do tratamento dos dados
+                para responder minha solicitação.
+              </span>
+            </label>
+
+            <button class="btn btn-dark submit" type="submit">
+              Enviar pré-cadastro
+            </button>
+
+            <p class="form-status" role="status"
+              aria-live="polite" aria-atomic="true"></p>
+
+            <p class="form-fallback">
+              Problemas para enviar?
+              <a href="mailto:diogoreissilva11@gmail.com">
+                Envie um e-mail diretamente
+              </a>
+              ou
+              <a href="https://wa.me/5569993842735"
+                target="_blank" rel="noopener noreferrer">
+                fale pelo WhatsApp
+              </a>.
+            </p>
+          </form>
+        </div>
       </div>
-
-      <form id="form-contato" class="lead-form"
-        role="tabpanel" aria-labelledby="tab-contato"
-        action="https://formsubmit.co/ajax/diogoreissilva11@gmail.com"
-        method="POST">
-
-        <input type="hidden" name="_subject"
-          value="Casa Contábil - Novo contato">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="tipo_formulario"
-          value="Contato rápido">
-
-        <div class="honeypot" aria-hidden="true">
-          <label>Deixe vazio
-            <input name="_honey" tabindex="-1" autocomplete="off">
-          </label>
-        </div>
-
-        <label>Nome completo
-          <input type="text" name="nome"
-            autocomplete="name" maxlength="100" required>
-        </label>
-
-        <label>E-mail
-          <input type="email" name="email"
-            autocomplete="email" maxlength="150" required>
-        </label>
-
-        <label>WhatsApp com DDD
-          <input type="tel" name="whatsapp"
-            autocomplete="tel" maxlength="25" required>
-        </label>
-
-        <label>Serviço desejado
-          <select name="servico" required>
-            <option value="">Selecione um serviço</option>
-            <option>Abertura de empresa</option>
-            <option>Contabilidade mensal</option>
-            <option>MEI</option>
-            <option>Regularização empresarial</option>
-            <option>Planejamento tributário</option>
-            <option>Departamento pessoal</option>
-            <option>Contabilidade rural e ITR</option>
-            <option>Imposto de Renda</option>
-            <option>Outros</option>
-          </select>
-        </label>
-
-        <label>Mensagem
-          <textarea name="mensagem" rows="5"
-            maxlength="1500" required></textarea>
-        </label>
-
-        <label class="privacy-check">
-          <input type="checkbox" name="ciencia_privacidade"
-            value="Sim" required>
-          <span>
-            Li a <a href="privacidade.html" target="_blank"
-            rel="noopener noreferrer">Política de Privacidade</a>
-            e estou ciente do uso dos dados para atendimento.
-          </span>
-        </label>
-
-        <button type="submit" class="btn btn-dark">
-          Enviar solicitação
-        </button>
-        <p class="form-status" role="status" aria-live="polite"></p>
-      </form>
-
-      <form id="form-cadastro" class="lead-form"
-        role="tabpanel" aria-labelledby="tab-cadastro"
-        action="https://formsubmit.co/ajax/diogoreissilva11@gmail.com"
-        method="POST" hidden>
-
-        <input type="hidden" name="_subject"
-          value="Casa Contábil - Novo pré-cadastro">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="tipo_formulario"
-          value="Pré-cadastro">
-
-        <div class="honeypot" aria-hidden="true">
-          <label>Deixe vazio
-            <input name="_honey" tabindex="-1" autocomplete="off">
-          </label>
-        </div>
-
-        <label>Nome ou razão social
-          <input name="razao_social" maxlength="150" required>
-        </label>
-
-        <label>Nome do responsável
-          <input name="responsavel" maxlength="100" required>
-        </label>
-
-        <label>E-mail
-          <input type="email" name="email" required>
-        </label>
-
-        <label>WhatsApp com DDD
-          <input type="tel" name="whatsapp" required>
-        </label>
-
-        <label>Cidade
-          <input name="cidade" maxlength="100" required>
-        </label>
-
-        <label>Estado
-          <input name="estado" maxlength="50" required>
-        </label>
-
-        <label>Perfil do cliente
-          <select name="perfil" required>
-            <option value="">Selecione</option>
-            <option>Pessoa física</option>
-            <option>MEI</option>
-            <option>Empresa</option>
-            <option>Produtor rural</option>
-            <option>Outro</option>
-          </select>
-        </label>
-
-        <label>Serviço de interesse
-          <input name="servico" maxlength="150" required>
-        </label>
-
-        <label>Informações adicionais
-          <textarea name="mensagem" rows="4"
-            maxlength="1500"></textarea>
-        </label>
-
-        <label class="privacy-check">
-          <input type="checkbox" name="ciencia_privacidade"
-            value="Sim" required>
-          <span>
-            Li a <a href="privacidade.html" target="_blank"
-            rel="noopener noreferrer">Política de Privacidade</a>
-            e estou ciente do uso dos dados para atendimento.
-          </span>
-        </label>
-
-        <button type="submit" class="btn btn-dark">
-          Enviar pré-cadastro
-        </button>
-        <p class="form-status" role="status" aria-live="polite"></p>
-      </form>
     </div>
-
-    <p class="fallback">
-      Se o formulário não funcionar, envie sua solicitação para
-      <a href="mailto:diogoreissilva11@gmail.com">
-        diogoreissilva11@gmail.com
-      </a>
-      ou fale pelo
-      <a href="https://wa.me/5569993842735"
-        target="_blank" rel="noopener noreferrer">WhatsApp</a>.
-    </p>
   </section>
 </main>
 
+<!-- RODAPÉ -->
 <footer class="footer">
-  <div class="container">
-    <strong>Casa Contábil</strong>
-    <p>Ji-Paraná · Rondônia</p>
-    <p>CRC informado: RO 11266</p>
-    <div class="footer-links">
+  <div class="wrap footer-row">
+    <div>
+      <strong>Casa Contábil</strong>
+      <p>Ji-Paraná · Rondônia<br>CRC informado: RO 11266</p>
+    </div>
+
+    <div>
       <a href="mailto:diogoreissilva11@gmail.com">E-mail</a>
-      <a href="https://wa.me/5569993842735">WhatsApp</a>
-      <a href="https://www.instagram.com/casa.contabil/">Instagram</a>
+      <a href="https://wa.me/5569993842735"
+         target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="https://www.instagram.com/casa.contabil/"
+         target="_blank" rel="noopener noreferrer">Instagram</a>
       <a href="privacidade.html">Privacidade</a>
     </div>
-    <p>© <span id="ano">2026</span> Casa Contábil.</p>
+  </div>
+
+  <div class="wrap copyright">
+    © <span id="ano">2026</span> Casa Contábil.
+    Todos os direitos reservados.
   </div>
 </footer>
+
+<a class="floating-whatsapp"
+   href="https://wa.me/5569993842735?text=Ol%C3%A1%21%20Gostaria%20de%20atendimento."
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Conversar com a Casa Contábil pelo WhatsApp">
+  ☎
+</a>
 </body>
 </html>
