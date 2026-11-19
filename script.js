@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   // Ano automático
   const ano = document.getElementById("ano");
