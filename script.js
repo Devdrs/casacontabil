@@ -1,225 +1,169 @@
-/* ============================================================
-   CASA CONTÁBIL — SCRIPT.JS
-   JavaScript puro, sem dependências externas.
-   Preparado para envio automático via FormSubmit (HTTPS) e
-   estrutura escalável para futura integração com CRM/API.
-   ============================================================ */
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", () => {
+  // Ano automático
+  const ano = document.getElementById("ano");
+  if (ano) ano.textContent = new Date().getFullYear();
 
-  /* ---------- Analytics seguro ---------- */
-  function track(nome, params) {
-    if (typeof gtag === 'function') {
-      gtag('event', nome, params || {});
-    }
+  // Menu mobile
+  const toggle = document.getElementById("menuToggle");
+  const menu = document.getElementById("menu");
+
+  function fecharMenu() {
+    if (!menu || !toggle) return;
+    menu.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
   }
 
-  /* ---------- Ano dinâmico no rodapé ---------- */
-  var anoEl = document.getElementById('ano');
-  if (anoEl) {
-    anoEl.textContent = new Date().getFullYear();
-  }
-
-  /* ---------- Menu mobile ---------- */
-  var navToggle = document.getElementById('navToggle');
-  var mainNav = document.getElementById('main-nav');
-
-  function setMenuState(open) {
-    if (!navToggle || !mainNav) { return; }
-    mainNav.classList.toggle('is-open', open);
-    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    navToggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
-    document.body.classList.toggle('menu-open', open);
-  }
-
-  if (navToggle && mainNav) {
-    navToggle.addEventListener('click', function () {
-      setMenuState(!mainNav.classList.contains('is-open'));
+  if (toggle && menu) {
+    toggle.addEventListener("click", () => {
+      const aberto = menu.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(aberto));
     });
 
-    mainNav.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        setMenuState(false);
-      });
+    menu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", fecharMenu);
     });
 
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && mainNav.classList.contains('is-open')) {
-        setMenuState(false);
-        navToggle.focus();
-      }
-    });
-
-    document.addEventListener('click', function (e) {
-      if (mainNav.classList.contains('is-open') && !mainNav.contains(e.target) && !navToggle.contains(e.target)) {
-        setMenuState(false);
-      }
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") fecharMenu();
     });
   }
 
-  /* ---------- Sombra no cabeçalho ao rolar ---------- */
-  var header = document.querySelector('.site-header');
-  if (header) {
-    window.addEventListener('scroll', function () {
-      header.style.boxShadow = window.scrollY > 12 ? '0 4px 16px rgba(24,26,29,.10)' : 'none';
-    }, { passive: true });
+  // Abas de contato e pré-cadastro
+  const abas = [
+    document.getElementById("tab-contato"),
+    document.getElementById("tab-cadastro")
+  ].filter(Boolean);
+
+  function selecionarAba(indice) {
+    abas.forEach((aba, i) => {
+      const ativa = i === indice;
+      const painel = document.getElementById(
+        aba.getAttribute("aria-controls")
+      );
+
+      aba.classList.toggle("active", ativa);
+      aba.setAttribute("aria-selected", String(ativa));
+      aba.tabIndex = ativa ? 0 : -1;
+
+      if (painel) painel.hidden = !ativa;
+    });
   }
 
-  /* ---------- Destaque de link ativo na navegação ---------- */
-  var navLinks = mainNav ? Array.prototype.slice.call(mainNav.querySelectorAll('a[href^="#"]')) : [];
-  var sections = navLinks.map(function (link) {
-    return document.querySelector(link.getAttribute('href'));
-  }).filter(Boolean);
+  abas.forEach((aba, indice) => {
+    aba.addEventListener("click", () => selecionarAba(indice));
 
-  if ('IntersectionObserver' in window && sections.length) {
-    var navObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          var id = '#' + entry.target.id;
-          navLinks.forEach(function (link) {
-            link.classList.toggle('is-active', link.getAttribute('href') === id);
-          });
-        }
-      });
-    }, { rootMargin: '-35% 0px -55% 0px' });
+    aba.addEventListener("keydown", event => {
+      const teclas = ["ArrowLeft", "ArrowRight", "Home", "End"];
+      if (!teclas.includes(event.key)) return;
 
-    sections.forEach(function (sec) { navObserver.observe(sec); });
-  }
+      event.preventDefault();
 
-  /* ---------- Animações de entrada ao rolar ---------- */
-  var fadeEls = document.querySelectorAll('.fade-in');
-  if ('IntersectionObserver' in window && fadeEls.length) {
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+      let proxima = indice;
 
-    fadeEls.forEach(function (el) { observer.observe(el); });
-  } else {
-    fadeEls.forEach(function (el) { el.classList.add('is-visible'); });
-  }
+      if (event.key === "Home") proxima = 0;
+      if (event.key === "End") proxima = abas.length - 1;
+      if (event.key === "ArrowRight")
+        proxima = (indice + 1) % abas.length;
+      if (event.key === "ArrowLeft")
+        proxima = (indice - 1 + abas.length) % abas.length;
 
-  /* ---------- Rastreamento de cliques externos ---------- */
-  document.querySelectorAll('a[href*="wa.me"]').forEach(function (a) {
-    a.addEventListener('click', function () {
-      track('clique_whatsapp', { local: a.textContent.trim().slice(0, 40) || 'botao_flutuante' });
+      selecionarAba(proxima);
+      abas[proxima].focus();
     });
   });
 
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function (a) {
-    a.addEventListener('click', function () {
-      track('clique_email');
-    });
-  });
+  // Envio dos formulários
+  document.querySelectorAll(".lead-form").forEach(form => {
+    const botao = form.querySelector('button[type="submit"]');
+    const status = form.querySelector(".form-status");
+    const textoOriginal = botao.textContent;
 
-  document.querySelectorAll('a[href*="instagram.com"]').forEach(function (a) {
-    a.addEventListener('click', function () {
-      track('clique_instagram');
-    });
-  });
-
-  /* ---------- Abas: Contato Rápido vs Pré-Cadastro ---------- */
-  var tabButtons = document.querySelectorAll('.tab-btn');
-  var tabPanels = document.querySelectorAll('.contact-form[role="tabpanel"]');
-
-  tabButtons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var targetId = btn.getAttribute('data-target');
-
-      tabButtons.forEach(function (b) {
-        var active = b === btn;
-        b.classList.toggle('is-active', active);
-        b.setAttribute('aria-selected', active ? 'true' : 'false');
-      });
-
-      tabPanels.forEach(function (panel) {
-        panel.classList.toggle('is-hidden', panel.id !== targetId);
-      });
-    });
-  });
-
-  /* ---------- Máscara simples de WhatsApp ---------- */
-  document.querySelectorAll('input[type="tel"]').forEach(function (telInput) {
-    telInput.addEventListener('input', function () {
-      var digits = telInput.value.replace(/\D/g, '').slice(0, 11);
-      if (digits.length > 6) {
-        telInput.value = '(' + digits.slice(0, 2) + ') ' + digits.slice(2, 7) + '-' + digits.slice(7);
-      } else if (digits.length > 2) {
-        telInput.value = '(' + digits.slice(0, 2) + ') ' + digits.slice(2);
-      } else if (digits.length > 0) {
-        telInput.value = '(' + digits;
-      }
-    });
-  });
-
-  /* ---------- Envio real dos formulários (Contato e Pré-Cadastro) ---------- */
-  document.querySelectorAll('.contact-form').forEach(function (form) {
-    var statusEl = form.querySelector('.form-status');
-    var submitBtn = form.querySelector('button[type="submit"]');
-    var defaultLabel = submitBtn ? submitBtn.textContent : 'Enviar';
-
-    function setStatus(msg, tipo) {
-      if (!statusEl) { return; }
-      statusEl.textContent = msg;
-      statusEl.className = 'form-status ' + (tipo || '');
+    function mostrarStatus(mensagem, tipo = "") {
+      status.textContent = mensagem;
+      status.className = "form-status " + tipo;
     }
 
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
+    form.addEventListener("submit", async event => {
+      event.preventDefault();
 
-      var honeypot = form.querySelector('.hp-field');
-      if (honeypot && honeypot.value) { return; }
+      if (!form.reportValidity()) return;
 
-      if (!form.checkValidity()) {
-        form.reportValidity();
-        setStatus('Verifique os campos obrigatórios e o aceite de privacidade.', 'erro');
+      // Campo invisível de prevenção contra bots
+      const honeypot = form.querySelector('[name="_honey"]');
+      if (honeypot && honeypot.value.trim()) {
+        mostrarStatus("Não foi possível enviar a solicitação.", "erro");
         return;
       }
 
-      var formData = new FormData(form);
-      formData.append('origem_url', window.location.href);
-      formData.append('data_envio_iso', new Date().toISOString());
+      // Verificação básica de telefone
+      const telefone = form.querySelector('[name="whatsapp"]');
 
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Enviando...';
+      if (telefone) {
+        const digitos = telefone.value.replace(/\D/g, "");
+
+        if (digitos.length < 10 || digitos.length > 13) {
+          mostrarStatus(
+            "Informe um WhatsApp válido com DDD.",
+            "erro"
+          );
+          telefone.focus();
+          return;
+        }
       }
-      setStatus('', '');
 
-      fetch(form.action, {
-        method: 'POST',
-        headers: { 'Accept': 'application/json' },
-        body: formData
-      })
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error('HTTP ' + response.status);
+      botao.disabled = true;
+      botao.textContent = "Enviando...";
+      mostrarStatus("");
+
+      try {
+        const dados = new FormData(form);
+        dados.append("pagina_origem", window.location.href);
+
+        const resposta = await fetch(form.action, {
+          method: "POST",
+          body: dados,
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+
+        if (!resposta.ok) {
+          throw new Error("Erro HTTP: " + resposta.status);
         }
-        return response.json();
-      })
-      .then(function (data) {
-        if (data && data.success === 'false') {
-          throw new Error('Rejeitado pelo provedor');
+
+        const resultado = await resposta.json();
+
+        if (
+          !resultado ||
+          (resultado.success !== true &&
+           resultado.success !== "true")
+        ) {
+          throw new Error("Envio não confirmado pelo serviço.");
         }
-        var tipoForm = formData.get('tipo_formulario') || 'contato';
+
         form.reset();
-        setStatus('Solicitação recebida com sucesso. Nossa equipe retornará em breve.', 'ok');
-        track('generate_lead', { metodo: tipoForm });
-      })
-      .catch(function () {
-        setStatus('Não foi possível concluir o envio automático agora. Fale pelo WhatsApp +55 (69) 99384-2735 ou escreva para diogoreissilva11@gmail.com.', 'erro');
-      })
-      .then(function () {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = defaultLabel;
-        }
-      });
+
+        mostrarStatus(
+          "Solicitação aceita pelo serviço de envio. " +
+          "Aguarde nosso retorno.",
+          "ok"
+        );
+
+      } catch (erro) {
+        console.error("Erro no formulário:", erro);
+
+        mostrarStatus(
+          "Não foi possível confirmar o envio. " +
+          "Entre em contato pelo WhatsApp (69) 99384-2735 " +
+          "ou pelo e-mail diogoreissilva11@gmail.com.",
+          "erro"
+        );
+
+      } finally {
+        botao.disabled = false;
+        botao.textContent = textoOriginal;
+      }
     });
   });
-
 });
