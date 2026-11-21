@@ -1,116 +1,234 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contador em Ji-Paraná (RO) | Casa Contábil</title>
-<meta name="description" content="Contador em Ji-Paraná e Rondônia: abertura de empresa, MEI, contabilidade mensal, folha de pagamento, Imposto de Renda e contabilidade rural. Monte sua proposta pela página.">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<meta name="theme-color" content="#23262b">
-<link rel="canonical" href="https://casacontabil.github.io/">
-<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
-<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Casa Contábil">
-<meta property="og:title" content="Contador em Ji-Paraná (RO) | Casa Contábil"><meta property="og:description" content="Contabilidade para empresas, MEIs e produtores rurais em Ji-Paraná. Monte sua proposta pela página.">
-<meta property="og:url" content="https://casacontabil.github.io/"><meta property="og:image" content="https://casacontabil.github.io/assets/img/casa-contabil-social.jpg">
-<meta property="og:image:width" content="1200"><meta property="og:image:height" content="1200"><meta property="og:image:alt" content="Casa Contábil — Sua empresa em boas mãos">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Contador em Ji-Paraná (RO) | Casa Contábil"><meta name="twitter:description" content="Contabilidade para empresas, MEIs e produtores rurais em Ji-Paraná.">
-<meta name="twitter:image" content="https://casacontabil.github.io/assets/img/casa-contabil-social.jpg">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"AccountingService","@id":"https://casacontabil.github.io/#negocio","name":"Casa Contábil","url":"https://casacontabil.github.io/","image":"https://casacontabil.github.io/assets/img/casa-contabil-social.jpg","telephone":"+5569993842735","address":{"@type":"PostalAddress","addressLocality":"Ji-Paraná","addressRegion":"RO","addressCountry":"BR"},"areaServed":["Ji-Paraná","Rondônia"],"sameAs":["https://www.instagram.com/casa.contabil/"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Serviços contábeis","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Abertura e regularização de empresas"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Contabilidade mensal"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Contabilidade para MEI"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Departamento pessoal e folha de pagamento"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Planejamento tributário"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Contabilidade rural e ITR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Imposto de Renda"}}]}},{"@type":"WebSite","name":"Casa Contábil","url":"https://casacontabil.github.io/","inLanguage":"pt-BR"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona a contratação?","acceptedAnswer":{"@type":"Answer","text":"Você responde às perguntas da seção de proposta, a Casa Contábil entra em contato pelo WhatsApp, entende sua situação e envia a proposta com escopo e valor. A contratação só acontece se você aprovar."}},{"@type":"Question","name":"Quanto custa um contador?","acceptedAnswer":{"@type":"Answer","text":"Depende do regime tributário, do número de funcionários, do volume de notas fiscais e dos serviços contratados. Por isso a proposta é feita sob medida a partir das suas respostas."}},{"@type":"Question","name":"Vocês atendem fora de Ji-Paraná?","acceptedAnswer":{"@type":"Answer","text":"Nossa base é Ji-Paraná, em Rondônia. Para empresas de outras cidades, consulte pelo WhatsApp a possibilidade de atendimento."}},{"@type":"Question","name":"Sou MEI. Preciso de contador?","acceptedAnswer":{"@type":"Answer","text":"O MEI não é obrigado a manter contador, mas pode precisar de apoio com a declaração anual, com DAS em atraso ou ao ultrapassar o limite de faturamento e migrar para ME."}},{"@type":"Question","name":"Posso trocar de contador?","acceptedAnswer":{"@type":"Answer","text":"Sim. Informe na proposta que você quer trocar e orientamos sobre a documentação necessária para a transição."}},{"@type":"Question","name":"Vocês atendem produtores rurais?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos demandas como ITR, Imposto de Renda rural e Livro Caixa Digital do Produtor Rural (LCDPR). Descreva sua situação na proposta."}}]}</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Casa Contábil | Contabilidade em Ji-Paraná, RO</title>
+<meta name="description" content="Contabilidade, abertura de empresas, MEI, regularização e serviços contábeis em Ji-Paraná. Simule honorários e solicite atendimento.">
+<meta name="theme-color" content="#25282e">
 <link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/precos.js" defer></script>
 <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-<header class="header"><div class="container header-inner">
-<a class="brand" href="#inicio"><span class="brand-icon" aria-hidden="true">CC</span><span>Casa Contábil<small>Ji-Paraná · Rondônia</small></span></a>
-<button id="menuToggle" class="menu-toggle" type="button" aria-controls="menu" aria-expanded="false">☰ Menu</button>
-<nav id="menu" class="nav" aria-label="Menu principal"><a href="#servicos">Serviços</a><a href="#como-funciona">Como funciona</a><a href="#valores">Valores</a><a href="#duvidas">Dúvidas</a></nav>
-<a class="btn btn-dark header-contact" href="#proposta">Receber proposta</a>
-</div></header>
+<a class="skip" href="#principal">Pular para conteúdo</a>
+<header class="header">
+  <div class="wrap head">
+    <a class="brand" href="#inicio">
+      <span class="monogram">CC</span>
+      <span>Casa Contábil<small>Ji-Paraná · Rondônia</small></span>
+    </a>
+    <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+    <nav id="menu">
+      <a href="#servicos">Serviços</a>
+      <a href="#simulador">Honorários</a>
+      <a href="#checklist">Checklist</a>
+      <a href="#contratacao">Contratação</a>
+    </nav>
+    <a class="btn dark desktop" href="https://wa.me/5569993842735" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </div>
+</header>
 
-<main id="conteudo">
-<section class="hero" id="inicio"><div class="container">
-<p class="eyebrow">Contabilidade em Ji-Paraná · Rondônia</p>
-<h1>Contador em Ji-Paraná para você ter a contabilidade em dia e o negócio crescendo</h1>
-<p class="hero-lead">Abertura de empresa, MEI, contabilidade mensal, folha de pagamento, Imposto de Renda e contabilidade rural, com atendimento direto pelo WhatsApp.</p>
-<div class="actions"><a class="btn btn-light" href="#proposta">Montar minha proposta</a><a class="btn btn-outline" href="https://wa.me/5569993842735?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20um%20contador." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a></div>
-<ul class="trust"><li>CRC RO 11266</li><li>Atendimento por WhatsApp</li><li>Proposta sob medida para o seu caso</li></ul>
-</div></section>
+<main id="principal">
+  <section id="inicio" class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">CONTABILIDADE EM JI-PARANÁ · RO</p>
+        <h1>Sua empresa em<br>boas mãos.</h1>
+        <p class="lead">Organização contábil, orientação e atendimento para sua empresa crescer com segurança.</p>
+        <div class="actions">
+          <a class="btn light" href="#simulador">Simular honorários</a>
+          <a class="btn outline" href="#contratacao">Solicitar atendimento</a>
+        </div>
+      </div>
+      <img src="assets/img/logo-destaque.png" alt="Arte institucional Casa Contábil" width="620" height="480">
+    </div>
+  </section>
 
-<section class="section container" id="servicos"><p class="eyebrow">Serviços contábeis em Ji-Paraná</p><h2>O que você precisa resolver agora?</h2>
-<p class="intro">Escolha o seu caso. A proposta já abre com o serviço selecionado.</p>
-<div class="cards">
-<a class="card pick" href="#proposta" data-servico="Abertura de empresa" data-tipo="Ainda vou abrir empresa"><h3>Quero abrir uma empresa</h3><p>Abertura de CNPJ, escolha do regime tributário e regularização cadastral em Rondônia.</p><span class="more">Pedir proposta →</span></a>
-<a class="card pick" href="#proposta" data-servico="MEI" data-tipo="MEI"><h3>Sou MEI e estou crescendo</h3><p>Declaração anual, DAS em atraso, desenquadramento e transformação de MEI em ME.</p><span class="more">Pedir proposta →</span></a>
-<a class="card pick" href="#proposta" data-servico="Contabilidade mensal" data-tipo="Empresa"><h3>Preciso de contador mensal</h3><p>Escrituração, rotinas fiscais e obrigações acessórias para pequenas empresas.</p><span class="more">Pedir proposta →</span></a>
-<a class="card pick" href="#proposta" data-servico="Departamento pessoal" data-tipo="Empresa"><h3>Tenho ou vou ter funcionários</h3><p>Folha de pagamento, admissões, férias, rescisões e eSocial.</p><span class="more">Pedir proposta →</span></a>
-<a class="card pick" href="#proposta" data-servico="Planejamento tributário" data-tipo="Empresa"><h3>Quero pagar impostos dentro da lei</h3><p>Análise do regime tributário e das alternativas legais para a sua empresa.</p><span class="more">Pedir proposta →</span></a>
-<a class="card pick" href="#proposta" data-servico="Contabilidade rural e ITR" data-tipo="Produtor rural"><h3>Sou produtor rural</h3><p>ITR, Imposto de Renda rural, Livro Caixa Digital (LCDPR) e organização fiscal.</p><span class="more">Pedir proposta →</span></a>
-<a class="card pick" href="#proposta" data-servico="Imposto de Renda" data-tipo="Pessoa física"><h3>Preciso declarar o Imposto de Renda</h3><p>Declaração para autônomos e empresários, regularização de pendências e malha fina.</p><span class="more">Pedir proposta →</span></a>
-<a class="card pick" href="#proposta" data-servico="Contabilidade mensal" data-tipo="Empresa"><h3>Quero trocar de contador</h3><p>Orientação sobre a documentação da transição e organização da contabilidade atrasada.</p><span class="more">Pedir proposta →</span></a>
-</div></section>
+  <section class="section wrap" id="servicos">
+    <p class="eyebrow">SOLUÇÕES</p>
+    <h2>Serviços para cada fase do negócio</h2>
+    <div class="cards">
+      <article><h3>Abertura e alteração</h3><p>Formalização, alteração e regularização empresarial.</p></article>
+      <article><h3>Contabilidade mensal</h3><p>Rotinas contábeis e fiscais de serviços, comércio e indústria.</p></article>
+      <article><h3>MEI</h3><p>Obrigações, declaração anual e orientações.</p></article>
+      <article><h3>Departamento pessoal</h3><p>Folha, admissões, férias e rescisões.</p></article>
+      <article><h3>Consultoria tributária</h3><p>Diagnósticos e planejamento conforme a situação.</p></article>
+      <article><h3>Rural e Imposto de Renda</h3><p>ITR, IRPF e demandas de produtores rurais.</p></article>
+    </div>
+  </section>
 
-<section class="section section-gray" id="como-funciona"><div class="container"><p class="eyebrow">Como funciona</p><h2>Da escolha à proposta, em quatro passos</h2>
-<ol class="steps">
-<li><strong>1. Você responde</strong><span>Informa seu caso no formulário de proposta. São poucas perguntas.</span></li>
-<li><strong>2. Entramos em contato</strong><span>A Casa Contábil chama você pelo WhatsApp para entender os detalhes.</span></li>
-<li><strong>3. Você recebe a proposta</strong><span>Com o escopo dos serviços e o valor, para você avaliar.</span></li>
-<li><strong>4. Você decide</strong><span>Se aprovar, iniciamos o atendimento. Se não, nada é contratado.</span></li>
-</ol></div></section>
+  <section class="section pale" id="simulador">
+    <div class="wrap">
+      <p class="eyebrow">REFERÊNCIA DE HONORÁRIOS</p>
+      <h2>Simule o valor do atendimento</h2>
+      <p>Os valores abaixo são referências da tabela enviada pela Casa Contábil. O valor final depende da análise do escopo e da aprovação da proposta.</p>
+      <div class="panel">
+        <div class="fields">
+          <label>Modalidade
+            <select id="modalidade">
+              <option value="mensal">Contabilidade mensal</option>
+              <option value="avulso">Serviço avulso</option>
+            </select>
+          </label>
+          <label id="regimeBox">Regime tributário
+            <select id="regime">
+              <option>Simples Nacional</option>
+              <option>Lucro Presumido</option>
+              <option>Lucro Real</option>
+            </select>
+          </label>
+          <label id="faixaBox">Faturamento anual
+            <select id="faixa"></select>
+          </label>
+          <label id="setorBox">Atividade
+            <select id="setor">
+              <option>Serviço</option>
+              <option>Comércio</option>
+              <option>Indústria</option>
+              <option>Multissetorial</option>
+            </select>
+          </label>
+          <label id="funcBox">Vínculos trabalhistas
+            <input id="vinculos" type="number" min="0" max="10000" value="0">
+          </label>
+          <label id="avulsoBox" hidden>Serviço avulso
+            <select id="avulso"></select>
+          </label>
+        </div>
+        <div class="quote">
+          <p>Estimativa</p>
+          <strong id="preco">—</strong>
+          <p id="detalhePreco">Selecione as características da empresa.</p>
+          <button class="btn dark" id="usarSimulacao" type="button">Usar na solicitação</button>
+        </div>
+      </div>
+      <p class="note">Honorários mensais da tabela: referência para empresas sem empregados. Para vínculos, a simulação soma uma estimativa de departamento pessoal conforme as faixas informadas. Não inclui tributos, taxas públicas, custos de terceiros ou serviços fora do escopo. Valores avulsos são por processo, serviço ou hora, conforme indicado.</p>
+    </div>
+  </section>
 
-<section class="section container" id="valores"><p class="eyebrow">Valores</p><h2>Como o valor do serviço é definido</h2>
-<p class="intro">Cada empresa tem uma rotina diferente, então o valor é montado a partir da sua realidade e apresentado por escrito antes da contratação. Os principais fatores são:</p>
-<ul class="factors"><li>Regime tributário da empresa</li><li>Número de funcionários</li><li>Volume de notas fiscais e lançamentos</li><li>Serviços contratados</li><li>Pendências a regularizar</li></ul>
-<p><a class="btn btn-dark" href="#proposta">Receber minha proposta</a></p></section>
+  <section class="section wrap" id="checklist">
+    <p class="eyebrow">DOCUMENTAÇÃO</p>
+    <h2>Checklist conforme a atividade e o serviço</h2>
+    <p>Uma lista inicial para preparar seu atendimento. A documentação definitiva depende da análise do caso.</p>
+    <div class="fields checklist-fields">
+      <label>Tipo de empresa
+        <select id="tipoEmpresa">
+          <option>Serviço</option>
+          <option>Comércio</option>
+          <option>Indústria</option>
+          <option>Multissetorial</option>
+          <option>MEI</option>
+          <option>Produtor rural</option>
+        </select>
+      </label>
+      <label>Serviço desejado
+        <select id="tipoServico">
+          <option>Abertura de empresa</option>
+          <option>Contabilidade mensal</option>
+          <option>Regularização ou alteração</option>
+          <option>Departamento pessoal</option>
+          <option>Imposto de Renda / ITR</option>
+          <option>Consultoria tributária</option>
+        </select>
+      </label>
+    </div>
+    <div class="check-panel">
+      <h3>Documentos e informações iniciais</h3>
+      <div id="listaChecklist"></div>
+      <button class="btn subtle" id="copiarChecklist" type="button">Copiar checklist</button>
+      <p id="checkStatus" role="status"></p>
+    </div>
+    <p class="note">Não envie documentos pessoais, senhas, certificados digitais ou arquivos sensíveis por este formulário público. O envio seguro será combinado após o atendimento.</p>
+  </section>
 
-<section class="section section-dark" id="proposta"><div class="container"><p class="eyebrow">Proposta</p><h2>Monte sua proposta</h2>
-<p class="intro">Quanto mais completas as respostas, mais precisa a proposta. Não envie senhas, documentos ou dados bancários.</p>
-<noscript><p class="fallback">O formulário exige JavaScript. Fale pelo <a href="https://wa.me/5569993842735">WhatsApp</a>.</p></noscript>
-<form id="form-proposta" class="lead-form" action="https://formsubmit.co/ajax/diogoreissilva11@gmail.com" method="POST">
-<input type="hidden" name="_subject" value="Casa Contábil - Pedido de proposta"><input type="hidden" name="_template" value="table"><input type="hidden" name="tipo_formulario" value="Pedido de proposta">
-<div class="honeypot" aria-hidden="true"><label>Deixe vazio <input name="_honey" tabindex="-1" autocomplete="off"></label></div>
-<fieldset><legend>Sobre o seu negócio</legend>
-<div class="row2">
-<label>Tipo de cliente<select name="tipo_cliente" required><option value="">Selecione</option><option>Pessoa física</option><option>MEI</option><option>Empresa</option><option>Produtor rural</option><option>Ainda vou abrir empresa</option></select></label>
-<label>Serviço desejado<select name="servico" required><option value="">Selecione</option><option>Abertura de empresa</option><option>Contabilidade mensal</option><option>MEI</option><option>Regularização empresarial</option><option>Planejamento tributário</option><option>Consultoria empresarial</option><option>Departamento pessoal</option><option>Contabilidade rural e ITR</option><option>Imposto de Renda</option><option>Outros</option></select></label>
-<label>Regime tributário atual<select name="regime"><option value="">Selecione</option><option>Não sei</option><option>MEI</option><option>Simples Nacional</option><option>Lucro Presumido</option><option>Lucro Real</option><option>Ainda não tenho empresa</option></select></label>
-<label>Funcionários<select name="funcionarios"><option value="">Selecione</option><option>Nenhum</option><option>1 a 5</option><option>6 a 20</option><option>Mais de 20</option></select></label>
-<label>Notas fiscais por mês<select name="notas"><option value="">Selecione</option><option>Não emito notas</option><option>Até 20</option><option>21 a 100</option><option>Mais de 100</option><option>Não sei informar</option></select></label>
-<label>Quando quer começar?<select name="urgencia"><option value="">Selecione</option><option>Preciso começar logo</option><option>Nos próximos 30 dias</option><option>Estou pesquisando</option></select></label>
-</div></fieldset>
-<fieldset><legend>Seus dados</legend>
-<div class="row2">
-<label>Nome completo<input type="text" name="nome" autocomplete="name" maxlength="100" required></label>
-<label>WhatsApp com DDD<input type="tel" name="whatsapp" autocomplete="tel" inputmode="tel" maxlength="25" required></label>
-</div>
-<label>E-mail (opcional)<input type="email" name="email" autocomplete="email" maxlength="150"></label>
-<label>Observações (opcional)<textarea name="mensagem" rows="3" maxlength="1500"></textarea></label>
-</fieldset>
-<label class="privacy-check"><input type="checkbox" name="ciencia_privacidade" value="Sim" required><span>Li o <a href="privacidade.html" target="_blank" rel="noopener noreferrer">Aviso de Privacidade</a> e estou ciente do uso dos dados para atendimento.</span></label>
-<div class="form-actions"><button type="submit" class="btn btn-light">Enviar pedido de proposta</button><a id="waProposta" class="btn btn-outline" href="https://wa.me/5569993842735" target="_blank" rel="noopener noreferrer">Enviar pelo WhatsApp</a></div>
-<p class="form-status" role="status" aria-live="polite"></p>
-<div id="resultado" class="result" hidden><p><strong>Pedido enviado ao serviço de envio.</strong> Para agilizar, continue pelo WhatsApp com o resumo pronto.</p><div class="form-actions"><a id="waResultado" class="btn btn-light" href="https://wa.me/5569993842735" target="_blank" rel="noopener noreferrer">Continuar no WhatsApp</a><a id="pagar" class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer" hidden>Contratar agora</a></div></div>
-</form></div></section>
+  <section class="section dark-section" id="contratacao">
+    <div class="wrap">
+      <p class="eyebrow">ATENDIMENTO E CONTRATAÇÃO</p>
+      <h2>Solicite seu serviço</h2>
+      <p>Seus dados serão encaminhados ao e-mail de atendimento. Após o envio, você poderá acessar o link do Mercado Pago. A contratação depende de análise, proposta e formalização contratual.</p>
 
-<section class="section container" id="duvidas"><p class="eyebrow">Perguntas frequentes</p><h2>Dúvidas sobre contratar um contador</h2>
-<div class="faq">
-<details><summary>Como funciona a contratação?</summary><p>Você responde às perguntas da seção de proposta, a Casa Contábil entra em contato pelo WhatsApp, entende sua situação e envia a proposta com escopo e valor. A contratação só acontece se você aprovar.</p></details>
-<details><summary>Quanto custa um contador?</summary><p>Depende do regime tributário, do número de funcionários, do volume de notas fiscais e dos serviços contratados. Por isso a proposta é feita sob medida a partir das suas respostas.</p></details>
-<details><summary>Vocês atendem fora de Ji-Paraná?</summary><p>Nossa base é Ji-Paraná, em Rondônia. Para empresas de outras cidades, consulte pelo WhatsApp a possibilidade de atendimento.</p></details>
-<details><summary>Sou MEI. Preciso de contador?</summary><p>O MEI não é obrigado a manter contador, mas pode precisar de apoio com a declaração anual, com DAS em atraso ou ao ultrapassar o limite de faturamento e migrar para ME.</p></details>
-<details><summary>Posso trocar de contador?</summary><p>Sim. Informe na proposta que você quer trocar e orientamos sobre a documentação necessária para a transição.</p></details>
-<details><summary>Vocês atendem produtores rurais?</summary><p>Sim. Atendemos demandas como ITR, Imposto de Renda rural e Livro Caixa Digital do Produtor Rural (LCDPR). Descreva sua situação na proposta.</p></details>
-</div></section>
+      <form id="form-proposta" action="https://formsubmit.co/ajax/diogoreissilva11@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Casa Contábil - Nova solicitação de contratação">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="resumo_orcamento" id="resumoOrcamento">
+        <input type="hidden" name="checklist_recomendado" id="checklistEmail">
+        <div class="honeypot" aria-hidden="true">
+          <label>Deixe vazio<input name="_honey" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <div class="fields">
+          <label>Nome do responsável
+            <input name="nome" required maxlength="120" autocomplete="name">
+          </label>
+          <label>E-mail
+            <input type="email" name="email" required maxlength="150" autocomplete="email">
+          </label>
+          <label>WhatsApp com DDD
+            <input name="whatsapp" type="tel" required maxlength="25" autocomplete="tel">
+          </label>
+          <label>Razão social / nome da empresa
+            <input name="razao_social" maxlength="150">
+          </label>
+          <label>CNPJ (se possuir)
+            <input name="cnpj" inputmode="numeric" maxlength="18" placeholder="Opcional">
+          </label>
+          <label>Cidade e UF
+            <input name="cidade_uf" required maxlength="100" placeholder="Ji-Paraná/RO">
+          </label>
+          <label>Atividade
+            <select name="atividade" id="atividadeForm">
+              <option>Serviço</option><option>Comércio</option><option>Indústria</option>
+              <option>Multissetorial</option><option>MEI</option><option>Produtor rural</option>
+            </select>
+          </label>
+          <label>Serviço solicitado
+            <select name="servico" id="servicoForm">
+              <option>Abertura de empresa</option>
+              <option>Contabilidade mensal</option>
+              <option>Regularização ou alteração</option>
+              <option>Departamento pessoal</option>
+              <option>Imposto de Renda / ITR</option>
+              <option>Consultoria tributária</option>
+            </select>
+          </label>
+        </div>
+        <label class="full">Informações adicionais
+          <textarea name="mensagem" rows="4" maxlength="1800" placeholder="Conte brevemente sua necessidade. Não inclua dados sensíveis."></textarea>
+        </label>
+        <label class="consent">
+          <input type="checkbox" required name="ciencia_privacidade" value="Sim">
+          <span>Li o <a href="privacidade.html" target="_blank" rel="noopener noreferrer">aviso de privacidade</a> e estou ciente do tratamento dos meus dados para atendimento e elaboração de proposta.</span>
+        </label>
+        <div class="actions">
+          <button class="btn light" type="submit">Enviar solicitação por e-mail</button>
+          <a id="waProposta" class="btn outline" href="https://wa.me/5569993842735" target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp</a>
+        </div>
+        <p id="formStatus" role="status" aria-live="polite"></p>
+      </form>
 
-<section class="section cta-final"><div class="container"><h2>Receba uma proposta para o seu caso</h2><p>Conte o que você precisa e a Casa Contábil retorna pelo WhatsApp.</p><a class="btn btn-light" href="#proposta">Montar minha proposta</a></div></section>
+      <div id="resultado" class="success" hidden>
+        <h3>Solicitação recebida pelo serviço de envio</h3>
+        <p>Confira seu e-mail e aguarde o contato para confirmar valores, escopo e contrato. Se desejar, abra o link de pagamento abaixo. O pagamento será conferido manualmente e não confirma automaticamente a contratação.</p>
+        <a class="btn light" href="https://link.mercadopago.com.br/pontoweb1" target="_blank" rel="noopener noreferrer">Acessar pagamento Mercado Pago</a>
+        <a class="btn outline" id="waResultado" href="https://wa.me/5569993842735" target="_blank" rel="noopener noreferrer">Continuar no WhatsApp</a>
+      </div>
+      <p class="note">O link de pagamento é externo e pode apresentar valor diferente do simulado. Confira o valor e as condições antes de pagar. Não há confirmação automática de pagamento neste site.</p>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <h2>Fale com a Casa Contábil</h2>
+    <p>WhatsApp: <a href="https://wa.me/5569993842735">(69) 99384-2735</a> · E-mail: <a href="mailto:diogoreissilva11@gmail.com">diogoreissilva11@gmail.com</a> · <a href="https://www.instagram.com/casa.contabil/" target="_blank" rel="noopener noreferrer">@casa.contabil</a></p>
+  </section>
 </main>
 
-<div class="sticky-cta"><a class="btn btn-dark" href="#proposta">Montar proposta</a><a class="btn btn-outline-dark" href="https://wa.me/5569993842735" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
-
-<footer class="footer"><div class="container">
-<strong>Casa Contábil</strong><p>Ji-Paraná · Rondônia</p><p>CRC RO 11266</p>
-<div class="footer-links"><a href="mailto:diogoreissilva11@gmail.com">E-mail</a><a href="https://wa.me/5569993842735" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://www.instagram.com/casa.contabil/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="privacidade.html">Privacidade</a></div>
-<p>© <span id="ano">2026</span> Casa Contábil.</p></div></footer>
+<footer>
+  <div class="wrap">
+    <strong>Casa Contábil</strong>
+    <p>Ji-Paraná · Rondônia · CRC informado: RO 11266</p>
+    <p><a href="privacidade.html">Privacidade</a> · © <span id="ano">2026</span> Casa Contábil</p>
+  </div>
+</footer>
 </body>
 </html>
